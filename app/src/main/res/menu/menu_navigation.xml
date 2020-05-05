@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/about_app">
+        <menu>
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/ic_preference"
+            android:title="@string/send_feedback"/>
+        <item
+            android:id="@+id/developer"
+            android:icon="@drawable/ic_preference"
+            android:title="@string/developer_info"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    android:layout_marginTop="24dp">
+
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageHeaderProfilePic"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ktu_logo"
+        android:layout_marginTop="15dp"
+
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:id="@+id/textViewHeaderUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/koforidua_technical_university"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold|italic"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+
+
+            />
+        <TextView
+            android:id="@+id/textViewHeaderCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/innovation_for_development"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="#ccc"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/linearLayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/toolbars"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:text="@string/developed_by"
+                android:textSize="24sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorAccent"
+                />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/toolbars"
+                android:background="@drawable/border_primary"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/developer"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_computer_science_student"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_2018_2023"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginStart="80dp"
+                    android:textSize="14sp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearLayout1"
+                android:orientation="vertical"
+                android:layout_margin="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border_primary">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_contact_phone_black_24dp"
+                        android:contentDescription="@string/image" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tel1"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border_primary"
+                    >
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_contact_phone_black_24dp"
+                        android:contentDescription="@string/image" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tel2"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border_primary">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ic_contact_mail_black_24dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                   />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

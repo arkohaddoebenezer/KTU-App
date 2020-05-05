@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/refreshLayoutExamTimeTable"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExamTimeTableActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/bar"
+            android:id="@+id/bar"/>
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/progressBarExamTimeTable"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_below="@+id/bar"/>
+
+        <WebView
+            android:id="@+id/webViewExamTimeTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/progressBarExamTimeTable"/>
+
+    </RelativeLayout>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

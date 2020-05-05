@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshLayoutTTT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeachingTimeTableActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/bar"
+            android:id="@+id/bar"/>
+
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/progressBarTTT"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_below="@+id/bar"/>
+
+        <WebView
+            android:id="@+id/webViewTeachTimeTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/progressBarTTT">
+        </WebView>
+
+
+    </RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
